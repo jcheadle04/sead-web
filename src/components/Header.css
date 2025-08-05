@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 1100;
-  background-color: #121b2f; /* dark navy blue-gray */
+  background-color: #000000; /* dark navy blue-gray */
   padding: 20px 40px;
   display: flex;
   flex-direction: column;
@@ -16,8 +16,8 @@
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: #00fff7; /* bright cyan/neon blue */
-  text-shadow: 0 0 10px rgba(0, 255, 247, 0.9);
+  color: #ffffff; /* bright cyan/neon blue */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   margin-bottom: 15px;
   cursor: default;
   text-align: center;
@@ -50,14 +50,14 @@
   bottom: -6px;
   width: 0;
   height: 3px;
-  background: #00fff7; /* same neon blue underline */
+  background: #000000; /* same neon blue underline */
   transition: width 0.3s ease;
   border-radius: 2px;
 }
 
 .nav-menu a:hover,
 .nav-menu a:focus {
-  color: #00d3cc; /* slightly darker cyan on hover */
+  color: #000000; /* slightly darker cyan on hover */
   outline: none;
 }
 
@@ -82,7 +82,7 @@
 .hamburger .bar {
   width: 28px;
   height: 4px;
-  background-color: #00fff7;
+  background-color: #000000;
   border-radius: 2px;
   transition: all 0.4s ease;
   transform-origin: center;
@@ -108,10 +108,10 @@
     flex-direction: column;
     padding-top: 6rem;
     gap: 2.5rem;
-    border-left: 4px solid #00fff7; /* neon blue border */
+    border-left: 4px solid #000000; /* neon blue border */
     transform: translateX(100%);
     transition: transform 0.35s ease-in-out;
-    box-shadow: -4px 0 15px rgba(0, 255, 247, 0.7);
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.7);
     z-index: 1110;
     justify-content: flex-start;
   }
