@@ -1,49 +1,52 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Music", href: "/music" },
+  { name: "Shows", href: "/shows" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/contact" },
+];
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Close menu on Escape press or clicking outside (optional)
   useEffect(() => {
-    const handleKeyDown = (e) => {
-      if (e.key === "Escape") setMenuOpen(false);
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    const onEsc = (e) => e.key === "Escape" && setMenuOpen(false);
+    window.addEventListener("keydown", onEsc);
+    return () => window.removeEventListener("keydown", onEsc);
   }, []);
 
-  const toggleMenu = () => setMenuOpen((open) => !open);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => setMenuOpen(false);
 
   return (
     <>
       <header className="header">
-        <div className="band-name" aria-label="Band name SEAD">
+        <div className="logo" aria-label="Brand name SEAD">
           SEAD
         </div>
 
-        <nav
-          className={`nav-menu ${menuOpen ? "open" : ""}`}
-          aria-label="Primary navigation"
-        >
-          {["home", "music", "shows", "gallery", "contact"].map((section) => (
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          {navLinks.map(({ name, href }) => (
             <a
-              key={section}
-              href={`#${section}`}
+              key={name}
+              href={href}
               onClick={closeMenu}
               tabIndex={menuOpen ? 0 : -1}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {name}
             </a>
           ))}
         </nav>
 
         <button
           className={`hamburger ${menuOpen ? "open" : ""}`}
-          onClick={toggleMenu}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
-          aria-controls="primary-navigation"
+          onClick={toggleMenu}
         >
           <span className="bar"></span>
           <span className="bar"></span>
@@ -51,9 +54,7 @@ const Header = () => {
         </button>
       </header>
 
-      {menuOpen && (
-        <div className="overlay" onClick={closeMenu} aria-hidden="true"></div>
-      )}
+      {menuOpen && <div className="overlay" onClick={closeMenu} />}
     </>
   );
 };

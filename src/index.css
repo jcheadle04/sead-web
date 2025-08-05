@@ -1,15 +1,32 @@
+/* index.css */
+
 body {
   margin: 0;
-  background-color: #ffffff; /* dark bluish-gray */
+  background-color: #121212; /* dark background */
   font-family: "Orbitron", sans-serif;
-  color: #f5f5dc; /* off-white / cream for text */
+  color: #e0e0e0; /* soft gray-white for text */
 }
 
 a {
-  color: #ffffff; /* electric blue links */
+  color: #bb86fc; /* electric purple links */
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ffffff; /* neon pink hover */
+  color: #ff69b4; /* neon pink hover */
+}
+
+button {
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
 }

@@ -1,0 +1,70 @@
+.contact-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem 3rem;
+  background-color: #1a1a2e; /* very dark blue/black */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(131, 58, 180, 0.7); /* purple glow */
+  color: #ddd6f3; /* soft light purple text */
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #9b59b6; /* bright purple */
+  margin-bottom: 2rem;
+  text-shadow: 0 0 1px #9b59b6;
+}
+
+.contact-form label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: #c0a3ff; /* lighter purple */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #5e4b8b; /* deep purple border */
+  border-radius: 6px;
+  background-color: #2c2c54; /* darker purple */
+  color: #ddd6f3;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #b1a7db;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #9b59b6;
+  box-shadow: 0 0 8px #9b59b6;
+  background-color: #3a2e6d;
+}
+
+.contact-form button {
+  margin-top: 1.8rem;
+  width: 100%;
+  background: linear-gradient(90deg, #7b44ff, #a95aff);
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #a95aff, #7b44ff);
+}

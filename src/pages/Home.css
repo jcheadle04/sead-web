@@ -1,0 +1,112 @@
+/* Reset horizontal margin/padding on body/html to avoid horizontal scroll */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevent accidental horizontal scroll */
+}
+
+/* Full-width banner sections */
+.welcome-section,
+.photo-section,
+.videos-section {
+  width: 100vw; /* full viewport width */
+  padding: 4rem 0; /* vertical padding */
+  margin: 0; /* no margin */
+  box-sizing: border-box;
+}
+
+/* Individual background & styling per section */
+.welcome-section {
+  background: linear-gradient(135deg, #2f1a47, #3b2a68);
+  box-shadow: inset 0 -10px 25px rgba(176, 128, 255, 0.15);
+}
+
+.photo-section {
+  background: #1a0f2f;
+  box-shadow: inset 0 10px 25px rgba(176, 128, 255, 0.15);
+}
+
+.videos-section {
+  background: linear-gradient(135deg, #241843, #2f2a5a);
+  box-shadow: inset 0 8px 30px rgba(176, 128, 255, 0.18);
+}
+
+/* Constrain content inside with a centered wrapper */
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem; /* horizontal padding */
+  box-sizing: border-box;
+}
+
+/* Text and other styles stay inside the content wrapper */
+.welcome-section h1 {
+  font-size: 2.7rem;
+  color: #c5b1ff;
+  text-shadow: 0 0 12px #7a5fff;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+/* Band photo styling to keep it responsive and neat */
+.band-photo {
+  width: 100%; /* fill container width */
+  max-width: 600px; /* max width */
+  height: auto; /* keep aspect ratio */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(176, 128, 255, 0.6);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block; /* fix inline space */
+  margin: 0 auto; /* center horizontally */
+}
+
+.band-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(176, 128, 255, 0.8);
+}
+
+/* Featured Videos Section Styling */
+
+.videos-section h2 {
+  font-size: 2.4rem;
+  color: #c5b1ff;
+  text-shadow: 0 0 12px #7a5fff;
+  margin-bottom: 2rem;
+  letter-spacing: 0.08em;
+}
+
+/* Container for videos with flexible wrapping */
+.videos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* space between videos */
+  justify-content: center;
+}
+
+/* Each video container */
+.video-card {
+  flex: 1 1 320px; /* grow, shrink, base width */
+  max-width: 560px; /* max width for larger screens */
+  box-shadow: 0 6px 20px rgba(176, 128, 255, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #2a1f50; /* dark purple background behind iframe */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(176, 128, 255, 0.7);
+}
+
+/* Responsive iframe */
+.video-card iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  display: block;
+}
