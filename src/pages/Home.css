@@ -11,7 +11,7 @@ body {
 .photo-section,
 .videos-section {
   width: 100vw; /* full viewport width */
-  padding: 4rem 0; /* vertical padding */
+  padding: 2rem 0; /* vertical padding */
   margin: 0; /* no margin */
   box-sizing: border-box;
 }

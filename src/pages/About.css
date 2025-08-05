@@ -1,0 +1,32 @@
+.about-container {
+  padding: 20px 20px 20px 20px; /* top adjusted for header overlap */
+  color: #f0f0f0;
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 600px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.about-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #c7a4f5; /* Accent color */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #c7a4f5;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.about-intro {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: #f7c5ff;
+}
+
+.about-details p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}

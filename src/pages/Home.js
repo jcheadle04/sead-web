@@ -1,10 +1,6 @@
 import React from "react";
 import "./Home.css";
 
-// If your image is in /public folder, use "/your-image-name.jpg"
-// Or import the image if in src/assets, like:
-// import bandPhoto from "../assets/band-photo.jpg";
-
 const Home = () => {
   return (
     <main className="home-container">
@@ -20,11 +16,7 @@ const Home = () => {
 
       <section className="photo-section">
         <div className="section-content">
-          <img
-            src="/S.jpg" // Ensure this matches your image file in public folder
-            alt="SEAD band photo"
-            className="band-photo"
-          />
+          <img src="/S.jpg" alt="SEAD band photo" className="band-photo" />
         </div>
       </section>
 
