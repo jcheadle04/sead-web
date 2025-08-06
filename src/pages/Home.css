@@ -18,18 +18,18 @@ body {
 
 /* Individual background & styling per section */
 .welcome-section {
-  background: linear-gradient(135deg, #2f1a47, #3b2a68);
-  box-shadow: inset 0 -10px 25px rgba(176, 128, 255, 0.15);
+  background-color: #363636;
+  box-shadow: inset 0 -10px 25px rgba(128, 128, 128, 0.15);
 }
 
 .photo-section {
-  background: #1a0f2f;
-  box-shadow: inset 0 10px 25px rgba(176, 128, 255, 0.15);
+  background: #1a1a1a;
+  box-shadow: inset 0 10px 25px rgba(128, 128, 128, 0.15);
 }
 
 .videos-section {
-  background: linear-gradient(135deg, #241843, #2f2a5a);
-  box-shadow: inset 0 8px 30px rgba(176, 128, 255, 0.18);
+  background: linear-gradient(135deg, #2a2a2a, #444444);
+  box-shadow: inset 0 8px 30px rgba(128, 128, 128, 0.18);
 }
 
 /* Constrain content inside with a centered wrapper */
@@ -43,8 +43,8 @@ body {
 /* Text and other styles stay inside the content wrapper */
 .welcome-section h1 {
   font-size: 2.7rem;
-  color: #c5b1ff;
-  text-shadow: 0 0 12px #7a5fff;
+  color: #cccccc;
+  text-shadow: 0 0 12px #888888;
   line-height: 1.2;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
@@ -56,7 +56,7 @@ body {
   max-width: 600px; /* max width */
   height: auto; /* keep aspect ratio */
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(176, 128, 255, 0.6);
+  box-shadow: 0 8px 20px rgba(128, 128, 128, 0.6);
   cursor: pointer;
   transition: transform 0.3s ease;
   display: block; /* fix inline space */
@@ -65,15 +65,14 @@ body {
 
 .band-photo:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(176, 128, 255, 0.8);
+  box-shadow: 0 12px 30px rgba(160, 160, 160, 0.8);
 }
 
 /* Featured Videos Section Styling */
-
 .videos-section h2 {
   font-size: 2.4rem;
-  color: #c5b1ff;
-  text-shadow: 0 0 12px #7a5fff;
+  color: #cccccc;
+  text-shadow: 0 0 12px #888888;
   margin-bottom: 2rem;
   letter-spacing: 0.08em;
 }
@@ -90,17 +89,17 @@ body {
 .video-card {
   flex: 1 1 320px; /* grow, shrink, base width */
   max-width: 560px; /* max width for larger screens */
-  box-shadow: 0 6px 20px rgba(176, 128, 255, 0.4);
+  box-shadow: 0 6px 20px rgba(128, 128, 128, 0.4);
   border-radius: 12px;
   overflow: hidden;
-  background: #2a1f50; /* dark purple background behind iframe */
+  background: #2e2e2e; /* dark grey background behind iframe */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .video-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 40px rgba(176, 128, 255, 0.7);
+  box-shadow: 0 12px 40px rgba(160, 160, 160, 0.7);
 }
 
 /* Responsive iframe */

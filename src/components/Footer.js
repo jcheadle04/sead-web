@@ -28,7 +28,7 @@ const Footer = () => {
       </nav>
       <div className="footer-text">
         <p>© SEAD LLC 2025</p>
-        <p>All rights reserved. Powered by passion and raw energy.</p>
+        <p>All rights reserved. </p>
       </div>
     </footer>
   );
